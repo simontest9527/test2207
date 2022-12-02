@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+@function rem($px){
+    @return $px/75*1rem;
+}
+.header{
+    display: flex;
+    align-items: center;
+width: 100%;
+height: rem(90);
+background-color: red;
+.user{
+    width: rem(100);
+    color: white;
+    text-align: center;
+    span{
+        font-size: rem(38);
+    }
+        p{
+            font-size:rem(22) ;
+        }
+}
+}
+.search{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: rem(56);
+    background-color: #f6f5f5;
+    border-radius: rem(6);
+    span{
+        color: #999;
+        font-size: ren(40);
+        padding: 0 rem(20);
+    }
+    p{
+        color: #222;
+        font-size: rem(28);
+    }
+
+}
+.send{
+   width: rem(100);
+   color:white ;
+   text-align: center;
+   span{
+    font-size: rem(38);
+   }
+}
+/*  中间导航*/
+.topnav{
+
+}
+// 导航结束
+
+
+/* 底部导航 */
+.bnav{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: rem(90);
+    border-top: 1px solid #b3b3b3;
+    align-items: center;
+    a{
+        display: block;
+        width: 25%;
+        text-align: center;
+        span{
+            font-size: rem(45);
+        }
+        p{
+            font-size: rem(24);
+        }
+    }
+}
+
+/* 顶部导航 */
+.topnav{
+    position: relative;
+    width: 100%;
+    height: rem(70);
+    border: 1px solid #e8e8e8;
+    .nav{
+        .swiper-slide{
+            a{
+                font-size: rem(40);
+                display: block;
+                line-height: rem(70);
+                text-align: center;
+            }
+        }
+    }
+    .navicon{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: rem(83);
+        height: rem((70));
+        background-color: rgba(255, 225,225, 0.6);
+        span{
+            font-size: rem(45);
+            line-height: rem(70);
+        }
+    }
+}
+
+.art{
+    
+    width: rem(690);
+    // height: rem(1100);
+   
+    // background: yellow;
+    margin: 0 auto;
+    h3{
+        font-size: rem(40);
+        color: #272727 ;
+       
+    }
+    img{
+        width: rem(226);
+        height: rem(226);
+        float: left;
+        
+    }
+    p{
+        color: #9e9e9e; 
+        font-size: rem(20);
+        letter-spacing: rem(5);
+    }
+    .im{
+        margin: 0 rem(5);
+    }
+    
+    
+}
+
+.big{
+    width: rem(690);
+    margin: rem(10) auto;
+    .left{
+        width: rem(413);
+        height: rem(226);
+        float: left;
+    }
+    p{
+        font-size: rem(40);
+        color: #333;
+        padding-top:rem(20);
+        
+        
+       
+        
+    }
+    .right{
+        float:right;
+    }
+    img{
+        width: rem(226);
+        height: rem(226);
+    }
+
+}
+
+
+
